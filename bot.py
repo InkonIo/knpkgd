@@ -33,7 +33,11 @@ import threading
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 
-from const import BOT_TOKEN, ADMIN_CHAT_ID, CHECK_INTERVAL, USERS_FILE, STATE_FILE
+BOT_TOKEN      = os.environ["BOT_TOKEN"]
+ADMIN_CHAT_ID  = os.environ["ADMIN_CHAT_ID"]
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", "1800"))
+USERS_FILE     = "users.json"
+STATE_FILE     = "state.json"
 
 # ============================================================
 # ЛОГИРОВАНИЕ
