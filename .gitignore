@@ -1,0 +1,6 @@
+const.py
+users.json
+state.json
+bot.log
+__pycache__/
+*.pyc
